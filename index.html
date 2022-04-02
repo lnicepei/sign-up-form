@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+<body>
+    <div class="header">
+
+    </div>
+    <form action="http://httpbin.org/post" method="post">
+
+        <div class="form-container">
+            <div class="form-header">
+                <p>Type the information about yourself</p>
+            </div>
+            <div class="form-main">
+                <div class="form-itself">
+                    <div class="first-row">
+                        <label for="fname">First name</label>
+                        <input type="text" name="first-name" id="fname" title="Please enter a valid First name, example: Sam" pattern="[a-zA-Z]{2, 20}" placeholder="John" required>
+                        <label for="lname">Last name</label>
+                        <input type="text" name="last-name" id="lname" title="Please enter a valid Last name, example: Richardson" pattern="[a-zA-Z]{2, 20}" placeholder="Doe" required>
+                    <div class="second-row"></div>
+                        <label for="mail">Email</label>
+                        <input type="email" name="email" id="mail" title="Please enter a valid email example: samrichardson@gmail.com" placeholder="johndoe@example.com" required>
+                        <label for="number">Phone number</label>
+                        <input type="tel" name="phone-number" id="number" required>
+                    </div>
+                    <div class="third-row">
+                        <label for="pass">Password</label>
+                        <input type="password" name="password" id="pass" required>
+                        <label for="passCheck">Confirm Password</label>
+                        <input type="password" name="password-check" id="passCheck" required>
+                    </div>
+                </div>
+            </div>
+            <div class="form-footer">
+                <button type="submit">Submit</button>
+            </div>
+        </div>
+    </form>
+</body>
+</html>
