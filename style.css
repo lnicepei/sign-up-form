@@ -150,13 +150,13 @@ a{
         background: linear-gradient(to bottom, transparent, 90%, grey), url(clarisse-meyer-VV2_XVEjg5w-unsplash.jpg);
     }
     .form-header{
-        width: 50vw;
+        width: 69vw;
         padding: 2rem;
         font-size: 1.4rem;
     }
     .form-container{
         border-radius: 40px;
-        height: 180vh;
+        height: 75vh;
         width: auto;
     }
     .form-main{
