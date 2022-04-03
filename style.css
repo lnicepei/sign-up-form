@@ -179,5 +179,9 @@ a{
     .form-footer{
         display: flex;
         justify-content: center;
+        margin-top: 0rem;
+    }
+    .form-footer > p{
+        margin-top: 1rem;
     }
 }
