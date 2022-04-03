@@ -18,7 +18,7 @@ img{
     height: var(--form-height);
     width: var(--form-width);
     border-radius: 40px 0 0 40px;
-    background: linear-gradient(to right, transparent, 75%, #1B2A4A), url(clarisse-meyer-VV2_XVEjg5w-unsplash.jpg);
+    background: linear-gradient(to right, transparent, 65%, #1B2A4A), url(clarisse-meyer-VV2_XVEjg5w-unsplash.jpg);
 }
 body{
     /* background: #142850; */
@@ -31,12 +31,19 @@ input, label {
     display: block;
 }
 button{
+    cursor: pointer;
     padding: 1rem;
     border-radius: .6rem;
     background: #5195EA;
     border: none;
     margin: 1rem;
-    margin-top: 3rem;
+    margin-top: 4rem;
+    margin-bottom: .6rem;
+}
+button:hover{
+    transition: .2s linear;
+    transform: scale(1.1);
+    /* outline: 3px solid white; */
 }
 form{
     display: flex;
@@ -55,7 +62,7 @@ form{
     height: 100%;
 }
 .form-header{
-    font-family: 'Gamja Flower', cursive;
+    /* font-family: 'Gamja Flower', cursive; */
     font-size: 2rem;
     /* font-family: 'Roboto Slab', serif; */
     display: flex;
@@ -100,7 +107,7 @@ input[type="text"]:user-invalid, input[type="email"]:user-invalid, input[type="p
     outline: 3px solid lightgreen;
 } */
 input:focus{
-    outline: none;
+    outline: 3px solid green ;
 }
 input:valid{
     outline: none;
@@ -115,8 +122,13 @@ input{
     border-radius: .5rem;
     margin: 2px;
 }
+a{
+    /* text-decoration: none; */
+    color: #EDEEEE;
+}
 @media screen and (max-width: 850px) {
     form {
+        --form-height: 0;
         position: absolute;
         /* top: calc(var(--form-height) / 10); */
         top: 5vh;
@@ -124,30 +136,48 @@ input{
         height: 80vh;
         /* width: 0; */
     }
+    button{
+        margin-top: -3rem;
+        margin-bottom: 1rem;
+    }
     img{
-        /* max-width: var(--form-width);
-        max-height: calc(var(--form-height) / 5); */
-        /* transform: rotate(90deg); */
         border-radius: 40px 40px 0 0;
-        height: auto;
-        width: auto;
+        height: 0;
+        width: 0;
     }
     .image{
         border-radius: 40px 40px 0 0;
-        background: linear-gradient(to bottom, transparent, 90%, grey), url(simon-lee-36TSQemRAxo-unsplash.jpg);
+        background: linear-gradient(to bottom, transparent, 90%, grey), url(clarisse-meyer-VV2_XVEjg5w-unsplash.jpg);
+    }
+    .form-header{
+        width: 50vw;
+        padding: 2rem;
+        font-size: 1.4rem;
     }
     .form-container{
-        border-radius: 0 0 40px 40px;
+        border-radius: 40px;
         height: 180vh;
         width: auto;
     }
     .form-main{
-        background: #00A8CC;
+        /* background: #00A8CC; */
         border-radius: 0 0 40px 40px;
-        height: 35vh;
+        height: 50vh;
         width: auto;
+        margin: auto;
+    }
+    .form-itself{
+        margin-bottom: 0;
     }
     input{
-        width: 40vw;
+        width: 50vw;
+        padding: .6rem;
+        border: none;
+        border-radius: .5rem;
+        margin: 2px;
+    }
+    .form-footer{
+        display: flex;
+        justify-content: center;
     }
 }
