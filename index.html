@@ -8,11 +8,8 @@
     <title>Document</title>
 </head>
 <body>
-    <div class="header">
-
-    </div>
     <form action="http://httpbin.org/post" method="post">
-
+        <img src="simon-lee-36TSQemRAxo-unsplash.jpg" alt="" srcset="">
         <div class="form-container">
             <div class="form-header">
                 <p>Type the information about yourself</p>
@@ -21,14 +18,14 @@
                 <div class="form-itself">
                     <div class="first-row">
                         <label for="fname">First name</label>
-                        <input type="text" name="first-name" id="fname" title="Please enter a valid First name, example: Sam" pattern="[a-zA-Z]{2, 20}" placeholder="John" required>
+                        <input type="text" name="first-name" id="fname" pattern="[a-zA-Z'-'\s]*" minlength="2" maxlength="20" placeholder="John" required>
                         <label for="lname">Last name</label>
-                        <input type="text" name="last-name" id="lname" title="Please enter a valid Last name, example: Richardson" pattern="[a-zA-Z]{2, 20}" placeholder="Doe" required>
+                        <input type="text" name="last-name" id="lname" pattern="[a-zA-Z'-'\s]*" minlength="2" maxlength="20" placeholder="Doe" required>
                     <div class="second-row"></div>
                         <label for="mail">Email</label>
-                        <input type="email" name="email" id="mail" title="Please enter a valid email example: samrichardson@gmail.com" placeholder="johndoe@example.com" required>
+                        <input type="email" name="email" id="mail" placeholder="johndoe@example.com" required>
                         <label for="number">Phone number</label>
-                        <input type="tel" name="phone-number" id="number" required>
+                        <input type="tel" name="phone-number" id="number" pattern="[0-9]{5,12}" placeholder="+0(12)345-67-89" required>
                     </div>
                     <div class="third-row">
                         <label for="pass">Password</label>
@@ -39,7 +36,8 @@
                 </div>
             </div>
             <div class="form-footer">
-                <button type="submit">Submit</button>
+                <button type="submit">Create Account</button>
+                <p>Already have an account</p><a href="#">Log in</a>
             </div>
         </div>
     </form>
