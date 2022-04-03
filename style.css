@@ -13,12 +13,15 @@ html, body {
     --form-width: max(60%, 350px);
 }
 img{
+}
+.image{
     height: var(--form-height);
     width: var(--form-width);
     border-radius: 40px 0 0 40px;
+    background: linear-gradient(to right, transparent, 75%, #1B2A4A), url(clarisse-meyer-VV2_XVEjg5w-unsplash.jpg);
 }
 body{
-    background: #142850;
+    /* background: #142850; */
     display: flex;
     justify-content: center;
     align-items: center;
@@ -28,8 +31,12 @@ input, label {
     display: block;
 }
 button{
-    background: #27496D;
+    padding: 1rem;
+    border-radius: .6rem;
+    background: #5195EA;
     border: none;
+    margin: 1rem;
+    margin-top: 3rem;
 }
 form{
     display: flex;
@@ -38,10 +45,11 @@ form{
     width: var(--form-width);
 }
 .form-container{
+    color: #EDEEEE;
     font-family: 'Bellota', cursive;
     font-size: 1.2rem;
     border-radius: 0 40px 40px 0;
-    background-color: #00A8CC;
+    background-color: #1B2A4A;
     opacity: 0.95;
     width: 100%;
     height: 100%;
@@ -55,7 +63,7 @@ form{
     align-items: center;
     flex-direction: column;
     width: 100%;
-    height: calc(var(--form-height) / 4);
+    height: calc(var(--form-height) / 5);
 }
 .form-main{
     display: flex;
@@ -70,7 +78,7 @@ form{
     align-items: center;
     flex-direction: column;
     width: 100%;
-    height: calc(var(--form-height) / 4);
+    height: calc(var(--form-height) * 0.3);
 }
 .form-itself{
     display: flex;
@@ -102,6 +110,10 @@ input{
     /* width: var(--form-width); */
     /* width: max(30%, 20vw); */
     width: 15vw;
+    padding: .6rem;
+    border: none;
+    border-radius: .5rem;
+    margin: 2px;
 }
 @media screen and (max-width: 850px) {
     form {
@@ -119,6 +131,10 @@ input{
         border-radius: 40px 40px 0 0;
         height: auto;
         width: auto;
+    }
+    .image{
+        border-radius: 40px 40px 0 0;
+        background: linear-gradient(to bottom, transparent, 90%, grey), url(simon-lee-36TSQemRAxo-unsplash.jpg);
     }
     .form-container{
         border-radius: 0 0 40px 40px;
