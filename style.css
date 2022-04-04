@@ -23,9 +23,6 @@ html, body {
     box-shadow: 0px 5px 10px 2px white;
 }
 body{
-    -webkit-box-shadow: inset 0px 0px 85px rgba(0,0,0,0.4);
-	-moz-box-shadow:    inset 0px 0px 85px rgba(0,0,0,0.4);
-	box-shadow:         inset 0px 0px 85px rgba(0,0,0,0.4);
     background-image: url(jj-ying-7JX0-bfiuxQ-unsplash.jpg);
     display: flex;
     justify-content: center;
